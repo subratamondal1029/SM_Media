@@ -1,0 +1,20 @@
+{
+  "name": "media_downloader",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "build": "npm install --production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@bochilteam/scraper-facebook": "^5.0.0",
+    "@bochilteam/scraper-savefrom": "^5.0.0",
+    "express": "^4.21.1",
+    "puppeteer": "^23.6.1"
+  }
+}
