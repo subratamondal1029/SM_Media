@@ -1,0 +1,27 @@
+{
+  "name": "SM_Media",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "build": "npm install --production"
+  },
+  "keywords": [
+    "media downloader",
+    "downloader",
+    "sm media",
+    "social media downloader"
+  ],
+  "author": "Subrata Mondal",
+  "license": "ISC",
+  "description": "This is a social media downloader for download video from veriou socila media",
+  "dependencies": {
+    "@bochilteam/scraper-facebook": "^5.0.0",
+    "@bochilteam/scraper-savefrom": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "puppeteer": "^23.6.1"
+  }
+}
