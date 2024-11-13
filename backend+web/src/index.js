@@ -6,11 +6,22 @@ import {
 } from "./downloaders/index.js";
 import ApiError from "./utils/apiError.js";
 import ApiResponse from "./utils/apiResponse.js";
+import cors from "cors";
+import { configDotenv } from "dotenv";
 
 const port = process.env.PORT || 8000;
 
 const app = express();
 
+configDotenv({
+  path: ".env",
+});
+app.use(
+  cors({
+    origin: process.env.CORS_ORIGIN || "*",
+    credentials: true,
+  })
+);
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static("public"));
